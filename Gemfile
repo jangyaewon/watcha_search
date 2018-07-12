@@ -63,3 +63,7 @@ gem 'mini_magick'
 gem 'faker'
 gem 'kaminari'
 gem 'bootstrap4-kaminari-views'
+
+
+gem 'summernote-rails', '~> 0.8.10.0'
+gem 'rails_admin'

@@ -114,11 +114,15 @@ end
     end
   end
 
+  def upload_image 
+   @image = Image.create(image_path: params[:upload][:image])
+   render json: @image
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_movie
        @movie = Movie.find(params[:id])  
-  
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
